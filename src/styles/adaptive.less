@@ -1,0 +1,571 @@
+/*768-1023*/
+@media screen and (max-width: 1023px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .phone {
+    color: white;
+
+  }
+
+  .intro {
+    padding: 97px 0 420px 0;
+    position: relative;
+
+    .container {
+      .intro-title {
+        max-width: 580px;
+      }
+
+      .intro-image {
+        bottom: 62px;
+        right: 55px;
+        position: absolute;
+      }
+    }
+  }
+
+
+  .advantages {
+    padding: 119px 0 120px 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .advantage-info {
+        max-width: 667px;
+
+        .advantage-info-title {
+          max-width: 475px;
+          text-align: center;
+          margin-left: 90px
+        }
+
+        .advantage-info-text {
+          max-width: 667px;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+      }
+
+      .advantage-image img {
+        max-width: 302px;
+      }
+
+      .advantage-descriptions {
+        grid-template-columns: repeat(2, 220px);
+        width: 489px;
+        min-width: 290px;
+        row-gap: 80px;
+
+        .advantage-item {
+          text-align: center;
+          justify-items: center;
+        }
+      }
+    }
+  }
+
+  .assortment {
+    .container {
+      justify-items: center;
+
+      .products-items {
+        row-gap: 136px;
+        column-gap: 29px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+  }
+
+
+  .order {
+    padding: 120px 0 120px 0;
+    min-height: 590px;
+
+    .container {
+      position: relative;
+
+      .left-side {
+        position: absolute;
+        padding-right: 0;
+        right: 20px;
+        top: 260px;
+
+        .strawberry-big {
+          left: -48px;
+          top: -40px;
+        }
+
+        .macaroon {
+          max-width: 352px;
+        }
+      }
+
+      .right-side {
+        padding-left: 0;
+
+        .order-form {
+          .strawberry-small {
+            top: 132px;
+            right: -230px;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+
+/*425-767*/
+@media screen and (max-width: 767px) {
+
+  .phone {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  /*Первая секция начало*/
+  .intro {
+    position: relative;
+
+    .container {
+      .intro-image {
+        right: 15px;
+        width: 400px;
+
+        .intro-macaroon {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+
+  .advantages {
+    .container {
+      .advantage-info {
+        .advantage-info-title {
+          max-width: 425px;
+          text-align: center;
+          margin-left: 0;
+        }
+      }
+
+      .advantage-descriptions {
+        grid-template-columns: 1fr 1fr;
+        width: 425px;
+
+        .descriptions-title {
+          font-size: 18px;
+        }
+
+        .advantage-item {
+          .description-text {
+            font-size: 13px;
+            color: rgb(51, 25, 7);
+            height: 100px;
+            width: 180px;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  .assortment {
+    .container {
+      .assortment-title {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        line-height: 1.833;
+        text-align: center;
+      }
+    }
+  }
+
+
+  .assortment {
+    .container {
+      .products-items {
+        grid-template-columns: 1fr
+      }
+    }
+  }
+
+
+  .strawberry-small {
+    display: none;
+  }
+
+  .order {
+    .container {
+      .left-side {
+        padding-right: 0;
+
+        .strawberry-big {
+          left: -87px;
+          top: -81px;
+        }
+
+        .order-macaroon {
+          display: none
+        }
+      }
+
+    }
+  }
+
+
+  .footer {
+    .footer-container {
+      align-items: flex-end;
+
+      .rights {
+        font-size: 10px;
+      }
+
+      .phone-footer {
+        font-size: 13px;
+      }
+    }
+
+  }
+
+
+  .gift-box {
+    display: block;
+    z-index: 3;
+
+    .gift-ellipse {
+      width: 80px;
+      height: 80px;
+
+      .gift-image {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background: #000000c9;
+    z-index: 5;
+
+    .menu-list {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0 auto;
+
+      .menu-item {
+        margin: 15px 0;
+
+        .menu-link {
+          font-size: 20px;
+          color: rgb(239 25 61);
+        }
+      }
+    }
+  }
+
+  .header-container {
+    flex-direction: row;
+  }
+
+
+  .header-burger {
+    display: block;
+    order: 2;
+  }
+
+  .header-burger svg {
+    width: 36px;
+    height: 36px;
+    fill: #821328;
+  }
+
+  /*Scripts*/
+  .menu.open {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu .menu-close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: #821328;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .gift-box {
+    display: block;
+    z-index: 3;
+    bottom: 25px;
+    right: 25px;
+
+    .gift-ellipse {
+      width: 70px;
+      height: 70px;
+
+      .gift-image {
+        max-width: 100%;
+        width: 43px;
+        height: 42px;
+      }
+    }
+
+    .gift-text {
+      font-size: 14px;
+      width: 152px;
+      right: 90px;
+    }
+  }
+
+
+}
+
+/*375 - 424*/
+@media screen and (max-width: 424px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Первая секция INTRO */
+  .intro {
+    padding-bottom: 43px;
+
+    .container {
+      flex-direction: column;
+
+      .intro-info {
+        margin: 0 auto;
+
+        .intro-title {
+          max-width: 336px;
+          font-size: 32px;
+          line-height: 1.25;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        .intro-description {
+          font-size: 16px;
+          line-height: 1.438;
+          text-align: center;
+        }
+
+        .intro-action {
+          text-align: center;
+          margin-bottom: 38px;
+        }
+      }
+
+      .intro-image {
+        width: 250px;
+        bottom: 0;
+        right: 0;
+        margin: 0 auto;
+        position: relative;
+
+        &::before, &::after {
+          width: 100px;
+          height: 100px;
+          top: 68px;
+          left: 85px;
+        }
+      }
+
+    }
+  }
+
+
+  /*Вторая секция*/
+  .advantages {
+    .container {
+      .advantage-info-title {
+        font-size: 30px;
+        line-height: 1.167;
+        text-align: center;
+      }
+
+      .advantage-descriptions {
+        width: 375px;
+
+        .advantage-item {
+          .descriptions-title {
+            font-size: 18px;
+            line-height: 2.496;
+          }
+
+          .description-text {
+            font-size: 13px;
+            line-height: 1.385;
+            text-align: center;
+            width: 159px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+
+  /*Третья секция*/
+  /*Четвертая секция ордер*/
+  .order {
+    .container {
+      .left-side {
+        position: relative;
+
+        .strawberry-big {
+          left: 270px;
+          top: -144px;
+        }
+      }
+
+      .right-side {
+        .order-form {
+          .order-title {
+            font-size: 30px;
+            line-height: 1.167;
+          }
+
+          .order-text {
+            font-size: 16px;
+            line-height: 1.437;
+            width: 344px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .footer {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+      position: relative;
+
+      .footer-logo-rights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo-footer {
+          position: absolute;
+          top: 0;
+        }
+      }
+
+      .rights {
+        bottom: 50px;
+        position: absolute;
+      }
+
+      .socials {
+        padding-bottom: 101px;
+        margin: 0 auto;
+      }
+
+      .phone-footer {
+        margin: 40px 0;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .advantages {
+    .container {
+      .advantage-descriptions {
+        max-width: 320px;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .order {
+    .container {
+      .left-side {
+        .strawberry-big {
+          left: 225px;
+        }
+      }
+    }
+  }
+
+
+  .right-side {
+    margin: 0 auto;
+  }
+
+  .order-text {
+    max-width: 300px;
+  }
+
+  .order-base-input {
+    max-width: 290px;
+  }
+
+  .base-input {
+    font-size: 13px;
+  }
+
+  .gift-box {
+    display: block;
+    z-index: 3;
+    bottom: 15px;
+    right: 15px;
+
+    .gift-ellipse {
+      width: 60px;
+      height: 60px;
+
+      .gift-image {
+        max-width: 100%;
+        width: 33px;
+        height: 32px;
+      }
+    }
+
+    .gift-text {
+      font-size: 13px;
+      width: 142px;
+      right: 80px;
+    }
+  }
+}
+
